@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
@@ -57,9 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNavHide.classList.toggle('d-none');
   }
 
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
+
   document.querySelectorAll('#navbar a').forEach(navbarlink => {
 
     if (!navbarlink.hash) return;
