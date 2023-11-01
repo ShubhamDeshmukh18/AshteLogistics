@@ -35,18 +35,18 @@
   <style>
     /* Style for the image slider container */
     .slider-container {
-        width: 100%;
-        overflow: hidden;
-        position: relative;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
     }
 
     /* Style for individual images */
     .slider-img {
-        width: 100%;
-        height: 100vh;
-        display: none;
+      width: 100%;
+      height: 100vh;
+      display: none;
     }
-</style>
+  </style>
 
 
 
@@ -58,8 +58,9 @@
 
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: rgba(14, 29, 52, 0.9);">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between" >
+  <header id="header" class="header d-flex align-items-center fixed-top"
+    style="background-color: rgba(14, 29, 52, 0.9);">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
@@ -79,25 +80,25 @@
           <li><a href="index.html" class="active" style="color: yellow;" style="color: yellow;">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="infrastructure.html">Infrastructure</a></li>      
-          <li><a href="Tarrif.html">Tariff</a></li>         
-                 
-          <li><a href="Media.html">Media</a></li>     
-          <li><a href="CSR.html">CSR</a></li>     
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="Tarrif.html">Tariff</a></li>
+
+          <li><a href="Media.html">Media</a></li>
+          <li><a href="CSR.html">CSR</a></li>
           <li><a href="etracking.html">E-Tracking</a></li>
           <li><a href="http://122.200.19.59:8080/ashteinvoice/approximations.jsp">Proforma</a></li>
-        
-         
+
+
 
           <li>
             <a class="get-a-quote" href="contact.html" style="display: flex; align-items: center;">
               <i class="bi bi-telephone" style="padding-right: 5px;"></i>
-              <span style="padding-left: 5px;">Contact Us</span> 
+              <span style="padding-left: 5px;">Contact Us</span>
             </a>
           </li>
-          
-         
-          
+
+
+
         </ul>
       </nav><!-- .navbar -->
 
@@ -109,94 +110,84 @@
   <!-- slider code starts here -->
   <div class="slider-container">
 
-    <img class="slider-img" src="assets/img/d8.JPG" alt="Image 16">      
-    <img class="slider-img" src="assets/img/d11.JPG" alt="Image 19">  
-    <img class="slider-img" src="assets/img/d12.JPG" alt="Image 20">  
-    <img class="slider-img" src="assets/img/d13.JPG" alt="Image 21">  
+    <img class="slider-img" src="assets/img/d8.JPG" alt="Image 16">
+    <img class="slider-img" src="assets/img/d11.JPG" alt="Image 19">
+    <img class="slider-img" src="assets/img/d12.JPG" alt="Image 20">
+    <img class="slider-img" src="assets/img/d13.JPG" alt="Image 21">
     <img class="slider-img" src="assets/img/Yard 5.JPG" alt="Image 1">
-     <img class="slider-img" src="assets/img/slide2.JPG" alt="Image 2"> 
-    <img class="slider-img" src="assets/img/slide1.jpg" alt="Image 3">   
+    <img class="slider-img" src="assets/img/slide2.JPG" alt="Image 2">
+    <img class="slider-img" src="assets/img/slide1.jpg" alt="Image 3">
     <img class="slider-img" src="assets/img/award.jpg" alt="Image 7">
-    
-</div>
 
-<script>
+  </div>
+
+  <script>
     var slideIndex = 0;
 
     function showNextImage() {
-        var images = document.getElementsByClassName("slider-img");
-        for (var i = 0; i < images.length; i++) {
-            images[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex >= images.length) {
-            slideIndex = 0;
-        }
-        images[slideIndex].style.display = "block";
-        setTimeout(showNextImage, 3000); // Change image every 1 second
+      var images = document.getElementsByClassName("slider-img");
+      for (var i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex >= images.length) {
+        slideIndex = 0;
+      }
+      images[slideIndex].style.display = "block";
+      setTimeout(showNextImage, 3000); // Change image every 1 second
     }
-
-    // Start the image slider
     showNextImage();
-</script>
+  </script>
   <!-- End slider Section -->
-  
-
-
-
-
-
-
-
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
     <div class="container">
       <div style="display: flex; justify-content: center; align-items: center; ">
         <h3 data-aos="fade-up">Your Lightning Fast Logistics Partner</h3>
-    </div>
+      </div>
 
- 
 
-        <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
 
-          <div class="col-lg-3 col-6">
-            <div class="stats-item text-center w-100 h-100" >
-              <span style="color: yellow;" data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>CFS</p>
-            </div>
+      <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+
+        <div class="col-lg-3 col-6">
+          <div class="stats-item text-center w-100 h-100">
+            <span style="color: yellow;" data-purecounter-start="0" data-purecounter-end="1"
+              data-purecounter-duration="1" class="purecounter"></span>
+            <p>CFS</p>
           </div>
-
-          <div class="col-lg-3 col-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span style="color: yellow;" data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Empty Depo</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span style="color: yellow;" data-purecounter-start="0" data-purecounter-end="12000" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p >TEU Capacity</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-6">
-            <div class="stats-item text-center w-100 h-100" >
-              <span style="color: yellow;" data-purecounter-start="0" data-purecounter-end="2524" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div>
-
-        
-
         </div>
 
-     
+        <div class="col-lg-3 col-6">
+          <div class="stats-item text-center w-100 h-100">
+            <span style="color: yellow;" data-purecounter-start="0" data-purecounter-end="1"
+              data-purecounter-duration="1" class="purecounter"></span>
+            <p>Empty Depo</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-6">
+          <div class="stats-item text-center w-100 h-100">
+            <span style="color: yellow;" data-purecounter-start="0" data-purecounter-end="12000"
+              data-purecounter-duration="1" class="purecounter"></span>
+            <p>TEU Capacity</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-6">
+          <div class="stats-item text-center w-100 h-100">
+            <span style="color: yellow;" data-purecounter-start="0" data-purecounter-end="2524"
+              data-purecounter-duration="1" class="purecounter"></span>
+            <p>Clients</p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
     </div>
   </section>
 
@@ -210,7 +201,7 @@
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
             <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
-            
+
             <div>
               <h4 class="title">Import & Export Handling</h4>
               <p class="description">Logistics at Ashte Logistics Pvt. Ltd. is a finely-tuned operation, ensuring the
@@ -258,19 +249,22 @@
             <img src="assets/img/Office 7.JPG" class="img-fluid" alt="">
             <a href="https://youtu.be/2jV9P3MfDZw?si=l9HI9yg2J6uhRFkQ" class="glightbox play-btn"></a>
           </div> -->
-          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first" style="position: relative;">
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first"
+            style="position: relative;">
             <div class="video-container" style="position: relative; overflow: hidden; max-width: 100%;">
               <img src="assets/img/Office 7.JPG" class="img-fluid" alt="" style="width: 100%; height: auto;">
-              <a href="https://youtu.be/2jV9P3MfDZw?si=l9HI9yg2J6uhRFkQ" class="glightbox play-btn" data-glightbox="type:video"></a>
+              <a href="https://youtu.be/2jV9P3MfDZw?si=l9HI9yg2J6uhRFkQ" class="glightbox play-btn"
+                data-glightbox="type:video"></a>
             </div>
           </div>
-          
+
           <div class="col-lg-6 content order-last  order-lg-first">
             <h3>About Us</h3>
             <p>
               Ashte Logistics Pvt. Ltd., headquartered in Mumbai, has established a cutting-edge Container Freight
               Station (CFS) in the picturesque Ashte Village, Panvel, nestled near the bustling Jawaharlal Nehru Port in
-              Navi Mumbai. The Ashte CFS sprawls over an expansive upto 90,000 square meters, boasting meticulously designed
+              Navi Mumbai. The Ashte CFS sprawls over an expansive upto 90,000 square meters, boasting meticulously
+              designed
               warehouses dedicated to facilitating seamless import and export operations. Additionally, its well-paved
               yard stands ready to graciously host over 4000 containers concurrently, ensuring
               efficient cargo handling in a splendid setting.
@@ -333,7 +327,7 @@
               </div>
               <h3><a href="importDetails.html" class="stretched-link">Import</a></h3>
               <p>We direct efforts towards offering fastest evacuation from the port for your imports, so you can save
-                on time. Our own equipment like Stacker  cranes and trailers ensure minimum dependence on anyone else and
+                on time. Our own equipment like Stacker cranes and trailers ensure minimum dependence on anyone else and
                 help us optimise operations.</p>
             </div>
           </div><!-- End Card Item -->
@@ -352,11 +346,12 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/cp3.JPG" alt="" class="img-fluid">
+                <img src="assets/img/ac3.jpg" alt="" class="img-fluid">
               </div>
               <h3><a href="yardDetails.html" class="stretched-link">YARD</a></h3>
               <p>We’ve made sure to bring you world-class facilities by complying with international standards and
-                acquiring  accreditations along with Authorized Economic Operator (AEO) certification and Advancing towards
+                acquiring accreditations along with Authorized Economic Operator (AEO) certification and Advancing
+                towards
                 Customs-Trade Partnership Against Terrorism (Upcoming C-TPAT) compliance. </p>
             </div>
           </div><!-- End Card Item -->
@@ -388,8 +383,9 @@
                 <img src="assets/img/cp6.JPG" alt="" class="img-fluid">
               </div>
               <h3><a href="PackagingDetails.html" class="stretched-link">Packaging</a></h3>
-              <p>Our team of experts, armed with years of industry experience, will be  dedicated to ensuring that every
-                aspect of your packaging needs will be catered to with utmost care and professionalism. We understand that
+              <p>Our team of experts, armed with years of industry experience, will be dedicated to ensuring that every
+                aspect of your packaging needs will be catered to with utmost care and professionalism. We understand
+                that
                 your goods are valuable, and we will treat them as such.</p>
             </div>
           </div><!-- End Card Item -->
@@ -478,7 +474,7 @@
 
       </div>
     </section>
-<!-- End Services Section -->
+    <!-- End Services Section -->
 
     <!-- ======= Call To Action Section ======= -->
     <section id="call-to-action" class="call-to-action">
@@ -528,9 +524,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
           <div class="col-md-5 order-1 order-md-2">
-            <img
-              src="assets/img/Yard 5.JPG"
-              class="img-fluid" alt="">
+            <img src="assets/img/Yard 5.JPG" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 order-2 order-md-1">
             <h3>Experience Effortless Excellence with Ashte Logistics</h3>
@@ -539,7 +533,8 @@
               Seamlessly upload documents, generate reports, and access real-time updates.
             </p>
             <p>
-              As part of the Ashte Logistics Group, we offer global connectivity to 180 countries and tailor-made logistics
+              As part of the Ashte Logistics Group, we offer global connectivity to 180 countries and tailor-made
+              logistics
               solutions, including first and last-mile deliveries. Contact us to elevate your logistics experience to
               exceptional levels of efficiency and sophistication.
             </p>
@@ -618,60 +613,78 @@
                 </h3>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    <i class="bi bi-box"></i> <strong>Import Warehouse</strong>:&nbsp; Our Import Warehouse is meticulously designed to handle imported goods with precision, ensuring efficient logistics for your incoming cargo.
+                    <i class="bi bi-box"></i> <strong>Import Warehouse</strong>:&nbsp; Our Import Warehouse is
+                    meticulously designed to handle imported goods with precision, ensuring efficient logistics for your
+                    incoming cargo.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-box-arrow-up"></i> <strong>Export Warehouse</strong>:&nbsp; Our Export Warehouse is your gateway to seamless export operations, offering a well-organized space to streamline your shipping processes.
+                    <i class="bi bi-box-arrow-up"></i> <strong>Export Warehouse</strong>:&nbsp; Our Export Warehouse is
+                    your gateway to seamless export operations, offering a well-organized space to streamline your
+                    shipping processes.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-truck"></i> <strong>01 no Forklifts (10 tons)</strong>:&nbsp; With a heavy lifting capacity of 10 tons, our forklift is your powerhouse for efficiently handling large and heavy cargo.
+                    <i class="bi bi-truck"></i> <strong>01 no Forklifts (10 tons)</strong>:&nbsp; With a heavy lifting
+                    capacity of 10 tons, our forklift is your powerhouse for efficiently handling large and heavy cargo.
                   </div>
-                  
-                  
-                  
+
+
+
                   <div class="accordion-body">
-                    <i class="bi bi-tools"></i> <strong>02 nos Hydra (12 tons)</strong>:&nbsp; Our two versatile hydra units, each capable of handling 12 tons, offer exceptional flexibility in material handling tasks.
+                    <i class="bi bi-tools"></i> <strong>02 nos Hydra (12 tons)</strong>:&nbsp; Our two versatile hydra
+                    units, each capable of handling 12 tons, offer exceptional flexibility in material handling tasks.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-forklift"></i> <strong>06 nos Forklifts (3 Tons)</strong>:&nbsp; Our fleet of six 3-ton forklifts provides agility and precision for various handling needs.
+                    <i class="bi bi-forklift"></i> <strong>06 nos Forklifts (3 Tons)</strong>:&nbsp; Our fleet of six
+                    3-ton forklifts provides agility and precision for various handling needs.
                   </div>
-                  
-                  
-                  
+
+
+
                   <div class="accordion-body">
-                    <i class="bi bi-container"></i> <strong>Container Yard for Loaded Containers</strong>:&nbsp; Our organized container yard is designed for the efficient storage of loaded containers, optimizing your supply chain.
+                    <i class="bi bi-container"></i> <strong>Container Yard for Loaded Containers</strong>:&nbsp; Our
+                    organized container yard is designed for the efficient storage of loaded containers, optimizing your
+                    supply chain.
                   </div>
-                  
-                  
+
+
                   <div class="accordion-body">
-                    <i class="bi bi-shipping"></i> <strong>Tank and Empty Containers Yard</strong>:&nbsp; We handle tanks and empty containers with care, providing a safe and organized space for storage.
+                    <i class="bi bi-shipping"></i> <strong>Tank and Empty Containers Yard</strong>:&nbsp; We handle
+                    tanks and empty containers with care, providing a safe and organized space for storage.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-crane"></i> <strong>01 no Heavy Lift Crane (100 tons)</strong>:&nbsp; Our heavy-duty crane with a lifting capacity of 100 tons is your reliable partner for handling challenging lifts.
+                    <i class="bi bi-crane"></i> <strong>01 no Heavy Lift Crane (100 tons)</strong>:&nbsp; Our heavy-duty
+                    crane with a lifting capacity of 100 tons is your reliable partner for handling challenging lifts.
                   </div>
-                  
-                  
-                  
+
+
+
                   <div class="accordion-body">
-                    <i class="bi bi-wrench"></i> <strong>Development of Yard and Warehouse Is Under Progress</strong>:&nbsp; We are continuously improving our yard and warehouse facilities to enhance our services and meet evolving logistics demands.
+                    <i class="bi bi-wrench"></i> <strong>Development of Yard and Warehouse Is Under
+                      Progress</strong>:&nbsp; We are continuously improving our yard and warehouse facilities to
+                    enhance our services and meet evolving logistics demands.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-star"></i> <strong>Special Features</strong>:&nbsp; Our offerings include a 5-ton forklift and an extensive trailer fleet, ensuring we have the right tools to meet your specific logistics requirements.
+                    <i class="bi bi-star"></i> <strong>Special Features</strong>:&nbsp; Our offerings include a 5-ton
+                    forklift and an extensive trailer fleet, ensuring we have the right tools to meet your specific
+                    logistics requirements.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-truck"></i> <strong>01 no Forklift 5 Ton</strong>:&nbsp; Our 5-ton forklift is a specialized and versatile asset for various handling tasks, ensuring efficiency in cargo operations.
+                    <i class="bi bi-truck"></i> <strong>01 no Forklift 5 Ton</strong>:&nbsp; Our 5-ton forklift is a
+                    specialized and versatile asset for various handling tasks, ensuring efficiency in cargo operations.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-truck-flatbed"></i> <strong>50 nos Trailers (Owned) + 200 Trailers Hire</strong>:&nbsp; With our extensive fleet of 50 owned trailers and access to 200 more for hire, we have the capacity to meet your transportation needs efficiently and reliably.
+                    <i class="bi bi-truck-flatbed"></i> <strong>50 nos Trailers (Owned) + 200 Trailers
+                      Hire</strong>:&nbsp; With our extensive fleet of 50 owned trailers and access to 200 more for
+                    hire, we have the capacity to meet your transportation needs efficiently and reliably.
                   </div>
-                  
+
                 </div>
               </div><!-- # Faq item-->
 
@@ -686,53 +699,73 @@
                 </h3>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    <i class="bi bi-geo-alt"></i> <strong>Most Advanced RFID Technology for Real-time Container Location Tracking</strong>: Utilizing cutting-edge RFID technology to provide real-time tracking of container locations, ensuring precision in logistics.
+                    <i class="bi bi-geo-alt"></i> <strong>Most Advanced RFID Technology for Real-time Container Location
+                      Tracking</strong>: Utilizing cutting-edge RFID technology to provide real-time tracking of
+                    container locations, ensuring precision in logistics.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-laptop"></i> <strong>Web-based Container E-tracking (Arrival and Scanning Status)</strong>: Offering convenient web-based tracking for container arrivals and scanning status, enhancing visibility in your supply chain.
+                    <i class="bi bi-laptop"></i> <strong>Web-based Container E-tracking (Arrival and Scanning
+                      Status)</strong>: Offering convenient web-based tracking for container arrivals and scanning
+                    status, enhancing visibility in your supply chain.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-camera"></i> <strong>Dedicated CCTV Station for 24/7 Surveillance and Monitoring</strong>: Ensuring round-the-clock surveillance and monitoring of the entire CFS premises to prevent security breaches.
+                    <i class="bi bi-camera"></i> <strong>Dedicated CCTV Station for 24/7 Surveillance and
+                      Monitoring</strong>: Ensuring round-the-clock surveillance and monitoring of the entire CFS
+                    premises to prevent security breaches.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-gear"></i> <strong>Implementation of Latest Information Technology</strong>: Leveraging the latest IT solutions for enhanced customer support, including e-invoice and e-payment options.
+                    <i class="bi bi-gear"></i> <strong>Implementation of Latest Information Technology</strong>:
+                    Leveraging the latest IT solutions for enhanced customer support, including e-invoice and e-payment
+                    options.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-truck"></i> <strong>Dedicated Trailers for Smooth Container Removal</strong>: Utilizing dedicated trailers to ensure timely and efficient removal of containers from the port to the CFS.
+                    <i class="bi bi-truck"></i> <strong>Dedicated Trailers for Smooth Container Removal</strong>:
+                    Utilizing dedicated trailers to ensure timely and efficient removal of containers from the port to
+                    the CFS.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-snow"></i> <strong>Reefer Plug-in Points (50 nos) for Refrigerated Cargo</strong>: Providing 50 dedicated reefer plug-in points for the handling and storage of temperature-sensitive refrigerator cargo.
+                    <i class="bi bi-snow"></i> <strong>Reefer Plug-in Points (50 nos) for Refrigerated Cargo</strong>:
+                    Providing 50 dedicated reefer plug-in points for the handling and storage of temperature-sensitive
+                    refrigerator cargo.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-people"></i> <strong>Dedicated Customer-friendly Help Desk</strong>: Offering a customer-friendly help desk for quick query resolution and excellent customer support.
+                    <i class="bi bi-people"></i> <strong>Dedicated Customer-friendly Help Desk</strong>: Offering a
+                    customer-friendly help desk for quick query resolution and excellent customer support.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-fire"></i> <strong>Smoke Detection, Fire Alarm & Sprinkler System in Warehouse</strong>: Ensuring safety with smoke detection, fire alarms, and a sprinkler system within the warehouse.
+                    <i class="bi bi-fire"></i> <strong>Smoke Detection, Fire Alarm & Sprinkler System in
+                      Warehouse</strong>: Ensuring safety with smoke detection, fire alarms, and a sprinkler system
+                    within the warehouse.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-shield"></i> <strong>HAZMAT Coordinator for Handling Hazardous Commodities</strong>: Expert HAZMAT coordinator for safe and compliant handling of hazardous commodities.
+                    <i class="bi bi-shield"></i> <strong>HAZMAT Coordinator for Handling Hazardous Commodities</strong>:
+                    Expert HAZMAT coordinator for safe and compliant handling of hazardous commodities.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-lightning"></i> <strong>High-capacity Generators for Uninterrupted Power Supply</strong>: Guaranteeing uninterrupted power supply with high-capacity generators.
+                    <i class="bi bi-lightning"></i> <strong>High-capacity Generators for Uninterrupted Power
+                      Supply</strong>: Guaranteeing uninterrupted power supply with high-capacity generators.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-file-earmark-text"></i> <strong>Auto System Reporting with Container Status and Stocks</strong>: Enabling automated system reporting for real-time container status and stock updates.
+                    <i class="bi bi-file-earmark-text"></i> <strong>Auto System Reporting with Container Status and
+                      Stocks</strong>: Enabling automated system reporting for real-time container status and stock
+                    updates.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-house"></i> <strong>Hygienic Canteen Facility within CFS Complex</strong>: Providing a hygienic canteen facility within the CFS complex for the convenience of customers.
+                    <i class="bi bi-house"></i> <strong>Hygienic Canteen Facility within CFS Complex</strong>: Providing
+                    a hygienic canteen facility within the CFS complex for the convenience of customers.
                   </div>
-                  
+
                 </div>
               </div><!-- # Faq item-->
 
@@ -746,35 +779,42 @@
                 </h3>
                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    <i class="bi bi-building"></i> <strong>An Esthetically Designed Office Block</strong>: An aesthetically designed office block catering to Customs, Customs Brokers, and surveyors within the CFS complex.
+                    <i class="bi bi-building"></i> <strong>An Esthetically Designed Office Block</strong>: An
+                    aesthetically designed office block catering to Customs, Customs Brokers, and surveyors within the
+                    CFS complex.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-gate"></i> <strong>Separate In and Out Gates</strong>: Separate entry and exit gates for congestion-free movements and enhanced safety.
+                    <i class="bi bi-gate"></i> <strong>Separate In and Out Gates</strong>: Separate entry and exit gates
+                    for congestion-free movements and enhanced safety.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-person"></i> <strong>Pedestrian Pathways</strong>: Pedestrian pathways surrounding the CFS perimeter for the safe movement of customers, visitors, and staff at any time.
+                    <i class="bi bi-person"></i> <strong>Pedestrian Pathways</strong>: Pedestrian pathways surrounding
+                    the CFS perimeter for the safe movement of customers, visitors, and staff at any time.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-camera"></i> <strong>High Boundary Wall and Bullet Cameras</strong>: A 5-meter high boundary wall with secure fencing and peripheral bullet cameras for additional security.
+                    <i class="bi bi-camera"></i> <strong>High Boundary Wall and Bullet Cameras</strong>: A 5-meter high
+                    boundary wall with secure fencing and peripheral bullet cameras for additional security.
                   </div>
-                  
-                  
-                  
+
+
+
                   <div class="accordion-body">
-                    <i class="bi bi-safe"></i> <strong>Strong Room for Valuable Cargo</strong>: A strong room available within the CFS warehouse for the storage of valuable and precious cargo.
+                    <i class="bi bi-safe"></i> <strong>Strong Room for Valuable Cargo</strong>: A strong room available
+                    within the CFS warehouse for the storage of valuable and precious cargo.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-tools"></i> <strong>Additional Services</strong>: Services including Fumigation, Lashing, Chocking, Palletization, and Shrink Wrapping are available to meet your cargo needs.
+                    <i class="bi bi-tools"></i> <strong>Additional Services</strong>: Services including Fumigation,
+                    Lashing, Chocking, Palletization, and Shrink Wrapping are available to meet your cargo needs.
                   </div>
-                  
+
                   <!-- <div class="accordion-body">
                     <i class="bi bi-house-door"></i> <strong> Warehouse Facility with Conveyor System</strong>: The warehouse is a facility equipped with a conveyor system for efficient cargo handling.
                   </div> -->
-                  
+
                 </div>
               </div><!-- # Faq item-->
 
@@ -788,53 +828,74 @@
                 </h3>
                 <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    <i class="bi bi-box"></i> <strong>Specialized in Handling Laden ISO Tanks</strong>: We specialize in handling laden ISO tanks in our CFS and are equipped to handle emergency repairs of laden tanks 24/7.
+                    <i class="bi bi-box"></i> <strong>Specialized in Handling Laden ISO Tanks</strong>: We specialize in
+                    handling laden ISO tanks in our CFS and are equipped to handle emergency repairs of laden tanks
+                    24/7.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-file"></i> <strong>Customs Authorized CFS Facility for HAZ Cargo</strong>: Our facility is authorized by Customs for the handling and storage of hazardous cargo, including 150 tank containers.
+                    <i class="bi bi-file"></i> <strong>Customs Authorized CFS Facility for HAZ Cargo</strong>: Our
+                    facility is authorized by Customs for the handling and storage of hazardous cargo, including 150
+                    tank containers.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-file-earmark-check"></i> <strong>Valid License from Maharashtra Pollution Control Board</strong>: We possess a valid license from the Maharashtra Pollution Control Board for handling hazardous cargo.
+                    <i class="bi bi-file-earmark-check"></i> <strong>Valid License from Maharashtra Pollution Control
+                      Board</strong>: We possess a valid license from the Maharashtra Pollution Control Board for
+                    handling hazardous cargo.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-vector-pen"></i> <strong>Designated Area for HAZ Loaded Containers</strong>: We have a designated area within our premises for the safe storage of loaded hazardous containers.
+                    <i class="bi bi-vector-pen"></i> <strong>Designated Area for HAZ Loaded Containers</strong>: We have
+                    a designated area within our premises for the safe storage of loaded hazardous containers.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-bucket"></i> <strong>Bund Facility for Temporary Storage</strong>: We provide bund facilities within our CFS premises for the temporary storage of hazardous containers in case of leakages.
+                    <i class="bi bi-bucket"></i> <strong>Bund Facility for Temporary Storage</strong>: We provide bund
+                    facilities within our CFS premises for the temporary storage of hazardous containers in case of
+                    leakages.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-briefcase"></i> <strong>Member of Mumbai Waste Management Ltd</strong>: As a member of Mumbai Waste Management Ltd, we utilize their common Hazardous Waste Treatment Storage disposal facility for responsible waste management.
+                    <i class="bi bi-briefcase"></i> <strong>Member of Mumbai Waste Management Ltd</strong>: As a member
+                    of Mumbai Waste Management Ltd, we utilize their common Hazardous Waste Treatment Storage disposal
+                    facility for responsible waste management.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-fire"></i> <strong>Advanced Fire-Fighting Equipment</strong>: Our facility is equipped with advanced and completely automated fire-fighting equipment in warehouses, buildings, and CFS yards areas.
+                    <i class="bi bi-fire"></i> <strong>Advanced Fire-Fighting Equipment</strong>: Our facility is
+                    equipped with advanced and completely automated fire-fighting equipment in warehouses, buildings,
+                    and CFS yards areas.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-droplet"></i> <strong>Fire Safety Measures</strong>: Our warehouses have sprinklers, smoke detectors, beam detectors, and foam jets for enhanced fire safety.
+                    <i class="bi bi-droplet"></i> <strong>Fire Safety Measures</strong>: Our warehouses have sprinklers,
+                    smoke detectors, beam detectors, and foam jets for enhanced fire safety.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-camera"></i> <strong>24x7 CCTV Surveillance</strong>: Our entire CFS area and surrounding areas are under 360-degree CCTV surveillance 24x7 with live feed viewing and recording software.
+                    <i class="bi bi-camera"></i> <strong>24x7 CCTV Surveillance</strong>: Our entire CFS area and
+                    surrounding areas are under 360-degree CCTV surveillance 24x7 with live feed viewing and recording
+                    software.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-shield"></i> <strong>Round-the-Clock Security Personnel</strong>: We have round-the-clock security personnel on-site, trained in fire-fighting and evacuation procedures for emergencies.
+                    <i class="bi bi-shield"></i> <strong>Round-the-Clock Security Personnel</strong>: We have
+                    round-the-clock security personnel on-site, trained in fire-fighting and evacuation procedures for
+                    emergencies.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-lightning"></i> <strong>High-Intensity Lighting</strong>: Several boundary peripheral light poles along with 8 high-intensity lighting masts towers enhance security in our CFS premises.
+                    <i class="bi bi-lightning"></i> <strong>High-Intensity Lighting</strong>: Several boundary
+                    peripheral light poles along with 8 high-intensity lighting masts towers enhance security in our CFS
+                    premises.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-lightbulb"></i> <strong>Warehouse Lighting for Safety</strong>: Warehouse lighting is installed for added safety and security within our CFS premises.
+                    <i class="bi bi-lightbulb"></i> <strong>Warehouse Lighting for Safety</strong>: Warehouse lighting
+                    is installed for added safety and security within our CFS premises.
                   </div>
-                  
+
                 </div>
               </div><!-- # Faq item-->
 
@@ -848,21 +909,28 @@
                 </h3>
                 <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    <i class="bi bi-check2-circle"></i> <strong>Successfully Implemented RFID Container Location Tracking</strong>: We successfully implemented On-Line Container Location Tracking using RFID technology in 2015.
+                    <i class="bi bi-check2-circle"></i> <strong>Successfully Implemented RFID Container Location
+                      Tracking</strong>: We successfully implemented On-Line Container Location Tracking using RFID
+                    technology in 2015.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-geo-alt"></i> <strong>Exact Real-Time Container Location</strong>: Our system provides exact real-time container location in the yard through SMS and web, accessible via GPRS-enabled mobile devices or web browsers.
+                    <i class="bi bi-geo-alt"></i> <strong>Exact Real-Time Container Location</strong>: Our system
+                    provides exact real-time container location in the yard through SMS and web, accessible via
+                    GPRS-enabled mobile devices or web browsers.
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-envelope"></i> <strong>Real-Time SMS Location Updates</strong>: Receive real-time SMS location updates by sending "loc container number" to 56070. For multiple containers, send "loc cont1 cont2 cont3".
+                    <i class="bi bi-envelope"></i> <strong>Real-Time SMS Location Updates</strong>: Receive real-time
+                    SMS location updates by sending "loc container number" to 56070. For multiple containers, send "loc
+                    cont1 cont2 cont3".
                   </div>
-                  
+
                   <div class="accordion-body">
-                    <i class="bi bi-globe"></i> <strong>CB Real-Time Mobile/Web Access</strong>: Enjoy real-time mobile and web access to container location information for your convenience.
+                    <i class="bi bi-globe"></i> <strong>CB Real-Time Mobile/Web Access</strong>: Enjoy real-time mobile
+                    and web access to container location information for your convenience.
                   </div>
-                  
+
                 </div>
               </div><!-- # Faq item-->
 
@@ -885,44 +953,44 @@
 
           <h4><a href="Career.html" class="mt-4" style="text-align: center; color: aliceblue;">Career</a></h4>
 
-          
+
           <a href="index.html" class="logo d-flex align-items-center ml-4" style="justify-content: center;">
             <img src="assets/img/ASHTE LOGO 1.jpg" alt="" style="border-radius: 10px;">
             <!-- <span>Ashte Logistics</span> -->
-        </a>
-        
+          </a>
+
           <div class="social-links d-flex mt-4" style="justify-content: center;">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
             <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
             <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+
+
+
         </div>
-        
-         
 
-      </div>
-      
 
-        
+
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a  href="importDetails.html">Import Handling</a></li>
-            <li><a  href="ExportDetails.html">Export Handling</a></li>
-            <li><a  href="HzardousCargoDetails.html">Hazardous Cargo</a></li>
-            <li><a  href="FirstmileDetails.html">First &amp; Last Mile Delivery</a></li>
+            <li><a href="importDetails.html">Import Handling</a></li>
+            <li><a href="ExportDetails.html">Export Handling</a></li>
+            <li><a href="HzardousCargoDetails.html">Hazardous Cargo</a></li>
+            <li><a href="FirstmileDetails.html">First &amp; Last Mile Delivery</a></li>
             <li><a href="isoTankDetails.html">ISO Tank</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-           
+
             <li><a href="SpecialCargoDetails.html">Specialized Cargo Handling</a></li>
             <li><a href="BondedWarehouse.html">Bonded & Non-Bonded Warehouse</a></li>
             <li><a href="ReeferMonitoringDetails.html">Reefer Monitoring Service</a></li>
             <li><a href="DirectPortDetails.html">Direct Port Delivery</a></li>
-           
+
 
           </ul>
         </div>
@@ -962,25 +1030,19 @@
 
       </div>
     </div>
-
     <div class="container mt-1">
       <div class="copyright">
         &copy; Copyright <strong><span>Ashte Logistics</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-
         Designed by <a href="https://rapportsoft.co.in/">Rapportsoft</a>
       </div>
     </div>
-
   </footer><!-- End Footer -->
   <!-- End Footer -->
-
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
-
   <div id="preloader"></div>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -988,10 +1050,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
