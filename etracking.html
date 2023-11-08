@@ -31,10 +31,59 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <script type="text/javascript">
 
+    function MM_swapImgRestore() { //v3.0
+      var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+    }
+    function MM_preloadImages() { //v3.0
+      var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+        var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+        if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+    }
+    
+    function MM_findObj(n, d) { //v4.01
+      var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+        d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+      if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+      for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+      if(!x && d.getElementById) x=d.getElementById(n); return x;
+    }
+    
+    function MM_swapImage() { //v3.0
+      var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+       if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+    }
+    //-->
+    </script>
+    <script>
+   function resetValue() {
+  document.getElementById("txtIGMNo").value = "";
+  document.getElementById("ItemNo").value = "";
+  document.getElementById("txtBlNo").value = "";
+  document.getElementById("txtContainerNo").value = "";
+  return false;
+}
+    function search()
+    {
+      if((document.online.txtIGMNo.value!=''&& document.online.ItemNo.value!='') || document.online.txtBlNo.value!='' || document.online.txtContainerNo.value!='')
+      {		
+            document.online.submit();	
+      }
+      else 
+      {
+        alert("Insert IGM and Item NO OR BL NO OR Container No")
+      }
+    }
+    </script>
+  
+
+    <script src="assets/js/AC_RunActiveContent.js" type="text/javascript"></script>
+  
 </head>
-<body>
 
+<body>
+ 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
@@ -55,14 +104,15 @@
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="infrastructure.html">Infrastructure</a></li>
-       
-          <li><a href="Tarrif.html">Tariff</a></li>         
-          <li class="dropdown"><a href="Media.html"><span>Media</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+
+          <li><a href="Tarrif.html">Tariff</a></li>
+          <li class="dropdown"><a href="Media.html"><span>Media</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="investorrelation.html">Investor Relation</a></li>
-              <li><a href="Career.html">Career</a></li>        
+              <li><a href="Career.html">Career</a></li>
             </ul>
-          </li>   
+          </li>
           <li><a href="CSR.html">CSR</a></li>
           <li><a href="etracking.html" class="active" style="color: yellow;">E-Tracking</a></li>
           <li><a href="http://122.200.19.59:8080/ashteinvoice/approximations.jsp">Proforma</a></li>
@@ -80,7 +130,7 @@
 
     </div>
   </header><!-- End Header -->
-  <!-- End Header -->
+ 
 
   <main id="main">
 
@@ -115,49 +165,129 @@
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 content order-last  order-lg-first">
+        <div class="row justify-content-center gy-4">
+          <div class="col-lg-6 content order-last order-lg-first text-center">
             <h3>Online Container Tracking System</h3>
-
-
-
-
+            <!-- Your other content goes here -->
           </div>
         </div>
-
       </div>
+      
       <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
-          <div class="row gy-4 mt-4 justify-content-center"> <!-- Center the form -->
+          <div class="row gy-4 mt-4 justify-content-center"> 
 
             <div class="col-lg-8">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input type="text" name="igmNo" class="form-control" id="igmNo" placeholder="IGM NO" required>
-                  </div>
-                  <div class="col-md-6 form-group">
-                    <input type="text" name="blNo" class="form-control" id="blNo" placeholder="BL NO" required>
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="text" class="form-control" name="containerNo" id="containerNo"
-                      placeholder="Container No" required>
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="item" id="item" placeholder="ITEM" required>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                </div>
-                <div class="text-center"><button type="submit"><i class="bi bi-search me-2"></i>Search</button> <button
-                    type="submit"> <i class="bi bi-arrow-counterclockwise me-2"></i>Reset</button></div>
+           
 
-              </form>
-            </div><!-- End Contact Form -->
+
+
+              <form name="online" action="http://122.200.19.59:8080/online/onlinePortal" method="post">  
+
+                <table  cellpadding="0" cellspacing="0" align="left"
+                  width="50%">
+                <tr>
+              
+                  <td style="text-align: center; background-color: #2356b0e0; color: #fff; padding: 12px; font-size: 18px; font-weight: normal; border-radius: 8px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-shadow: 2px 2px 2px #555;">
+                    IGM NO
+                   </td>
+                <td><div class="col-md-12 form-group">
+             
+                  <input type="text" name="txtIGMNo" class="form-control NormalText" id="txtIGMNo" 
+                         placeholder="IGM NO" style="border: 2px solid #2356b0e0; border-radius: 5px; padding: 10px; font-size: 16px;">
+                </div>
+                </td>
+               
+                <td style="text-align: center; background-color: #2356b0e0; color: #fff; padding: 12px; font-size: 18px; font-weight: normal; border-radius: 8px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-shadow: 2px 2px 2px #555;">
+                 ITEM
+                </td>
+                <td><div class="col-md-12 form-group">
+                 
+                  <input type="text" name="ItemNo" class="form-control NormalText" id="ItemNo" 
+                         placeholder="ITEM" style="border: 2px solid #2356b0e0; border-radius: 5px; padding: 10px; font-size: 16px;" required>
+                </div>
+                </td> 
+                
+                </tr>
+                
+                <tr>
+                <td><font color="RED"><b>OR</b></font></td>
+                </tr>
+                
+                <tr>
+                
+               
+                  <td style="text-align: center; background-color: #2356b0e0; color: #fff; padding: 12px; font-size: 18px; font-weight: normal; border-radius: 8px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-shadow: 2px 2px 2px #555;">
+                    BL NO
+                  </td>
+                <td><div class="col-md-12 form-group">
+                
+                  <input type="text" name="txtBlNo" class="form-control NormalText" id="txtBlNo" 
+                         placeholder="Enter BL NO" style="border: 2px solid #2356b0e0; border-radius: 5px; padding: 10px; font-size: 16px;">
+                </div>
+                </td> 
+                </tr>
+                
+                <tr>
+                <td><font color="RED"><b>OR</b></font></td>
+                
+                </tr>
+                
+                <tr>
+
+                  
+               
+                  <td style="text-align: center; background-color: #2356b0e0; color: #fff; padding: 8px 12px; font-size: 18px; font-weight: normal; border-radius: 8px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-shadow: 2px 2px 2px #555;">
+                    CONTAINER NO
+                  </td>
+                  
+                  
+                  
+                <td><div class="col-md-12 form-group mt-3 mt-md-0">
+                 
+                  <input type="text" name="txtContainerNo" class="form-control NormalText" id="txtContainerNo" 
+                         placeholder="Enter Container No." style="border: 2px solid #2356b0e0; border-radius: 5px; padding: 10px; font-size: 16px;">
+                </div>
+                </td> <br>
+                </tr>
+                
+               
+                <tr>
+                <td></td>
+                <td><button type="button" name="btSearch" class="Buttonbg" onclick="search()"
+                  style="background-color: #4CAF50; /* Green background */
+                         border: none; /* Remove borders */
+                         color: white; /* White text */
+                         padding: 10px 20px; /* Some padding */
+                         text-align: center; /* Center text */
+                         text-decoration: none; /* Remove underline */
+                         display: inline-block; /* Make it a block element to center */
+                         font-size: 16px; /* Increase font size */
+                         border-radius: 8px; /* Add border-radius for rounded corners */">
+                  <i class="bi bi-search me-2"></i>Search
+                </button>
+                
+                <button type="reset" name="btnReset" onclick="return resetValue();" class="Buttonbg"
+                  style="background-color: #f44336; /* Red background */
+                         border: none; /* Remove borders */
+                         color: white; /* White text */
+                         padding: 10px 20px; /* Some padding */
+                         text-align: center; /* Center text */
+                         text-decoration: none; /* Remove underline */
+                         display: inline-block; /* Make it a block element to center */
+                         font-size: 16px; /* Increase font size */
+                         border-radius: 8px; /* Add border-radius for rounded corners */">
+                  <i class="bi bi-arrow-counterclockwise me-2"></i>Reset
+                </button>
+                </td>
+                </tr>
+                
+                </table>
+                </form>
+
+
+                
+            </div>
 
           </div>
         </div>
@@ -165,10 +295,173 @@
 
 
 
+     
+  
+  <div class="container" data-aos="fade-up">
 
-    </section><!-- End About Us Section -->
+    <div class="section-header">
+      <!-- <span>Container Details</span>
+      <h2> Container Details</h2> -->
+
+    </div>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+       
+        width: 90%;
+        height: 50%;
+        margin: 0 auto; 
+      }
+    
+      td,
+      th {
+        
+        text-align: center;
+        padding: 8px;
+      }
+    </style>
+
+<!-- 
+<table cellspacing="0" cellpadding="0" border="1" bordercolor="#333333">
+
+<col width="617" />
+<col width="900" />
+<col width="617" />
+<col width="900" />
+<col width="900" />
+<col width="900" />
+<col width="900" />
+<col width="900" />
+<col width="900" />
+<col width="900" />
+
+<tr height="21">
+  <td height="21">
+      <div align="center"
+          style="text-align: center; background-color: rgb(193, 240, 212);"><br />
+          
+          <strong> IGM No	</strong><br /> 
+          <br />
+      </div>
+      
+  </td>
+ 
+  <td height="21">
+    <div align="center"
+        style="text-align: center; background-color: rgb(193, 240, 212);"><br />
+        
+        <strong>Item No	</strong><br /> 
+        <br />
+    </div>
+    <td height="21">
+      <div align="center"
+          style="text-align: center; background-color: rgb(193, 240, 212);"><br />
+          
+          <strong>Container No	</strong><br /> 
+          <br />
+      </div>
+      <td height="21">
+        <div align="center"
+            style="text-align: center; background-color: rgb(193, 240, 212);"><br />
+            
+            <strong>Size	</strong><br /> 
+            <br />
+        </div>
+        <td height="21">
+          <div align="center"
+              style="text-align: center; background-color: rgb(193, 240, 212);"><br />
+              
+              <strong>Type	</strong><br /> 
+              <br />
+          </div>
+          <td height="21">
+            <div align="center"
+                style="text-align: center; background-color: rgb(193, 240, 212);"><br />
+                
+                <strong>Gate In Date	</strong><br /> 
+                <br />
+            </div>
+            <td height="21">
+              <div align="center"
+                  style="text-align: center; background-color: rgb(193, 240, 212);"><br />
+                  
+                  <strong>Hold Status	</strong><br /> 
+                  <br />
+              </div>
+    
+</td>
 
 
+<td height="21">
+  <div align="center"
+      style="text-align: center; background-color: rgb(193, 240, 212);"><br />
+      
+      <strong>	Scanning Type	</strong><br /> 
+      <br />
+  </div>
+
+</td>
+<td height="21">
+  <div align="center"
+      style="text-align: center; background-color: rgb(193, 240, 212);"><br />
+      
+      <strong>	Location	</strong><br /> 
+      <br />
+  </div>
+
+</td>
+<td height="21">
+  <div align="center"
+      style="text-align: center; background-color: rgb(193, 240, 212);"><br />
+      
+      <strong>	Shipping Line</strong><br /> 
+      <br />
+  </div>
+
+</td>
+
+
+</tr>
+				
+<tr>
+ 
+  <td>
+      <blockquote> 2359550 </blockquote>
+  </td>
+  <td>
+    <blockquote> 	0104 </blockquote>
+</td>
+  <td>
+      <blockquote>FCIU5528217</blockquote>
+  </td>
+ 
+  <td>
+    <blockquote> 20		</blockquote>
+</td>
+<td>
+    <blockquote>DV</blockquote>
+</td>
+<td>
+  <blockquote> 06 Nov 2023 18:23:00  </blockquote>
+</td>
+<td>
+  <blockquote>NOT HOLD</blockquote>
+</td>
+<td>
+  <blockquote> DTS </blockquote>
+</td>
+<td>
+  <blockquote>Ashte-CFS</blockquote>
+</td>
+<td>
+  <blockquote>OOCL (INDIA) PVT.LTD</blockquote>
+</td>
+</tr>
+
+
+</table> -->
+
+<br/>
 
 
 
@@ -290,3 +583,9 @@
 </body>
 
 </html>
+
+
+
+
+
+
